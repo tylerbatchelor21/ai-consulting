@@ -1,4 +1,12 @@
+<!-- Vercel Web Analytics for Static HTML Sites -->
+<!-- Add this initialization script to the <head> section: -->
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
-<script defer src="/<unique-path>/script.js"></script>
+
+<!-- Add this script tag before closing </body> tag: -->
+<script defer src="/_vercel/insights/script.js"></script>
+
+<!-- Note: No npm package installation needed for static HTML sites.
+     Simply enable Web Analytics in your Vercel project dashboard,
+     and these scripts will automatically connect when deployed. -->
